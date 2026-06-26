@@ -81,6 +81,13 @@ const InsightPost = () => {
       },
     },
     mainEntityOfPage: { "@type": "WebPage", "@id": url },
+    keywords: post.category,
+    articleSection: post.category,
+    wordCount: post.blocks.reduce((n, b) => {
+      if (b.type === "p" || b.type === "h2" || b.type === "h3" || b.type === "quote") return n + b.text.split(/\s+/).length;
+      if (b.type === "ul" || b.type === "ol") return n + b.items.join(" ").split(/\s+/).length;
+      return n;
+    }, 0),
   };
 
   const breadcrumbSchema = {

@@ -24,7 +24,7 @@ export const posts: Post[] = [
     slug: "rnpv-biotech-valuation",
     title: "How to model rNPV for a biotech asset (with a worked example)",
     description:
-      "A practical walkthrough of risk-adjusted NPV for biopharma assets — phase-by-phase probabilities, cash flow timing, and the assumptions most analysts get wrong.",
+      "rNPV discounts each future cash flow by both the time value of money and the cumulative probability a biotech program survives every prior clinical phase. A worked Phase 2 oncology example, with the assumptions analysts get wrong.",
     date: "2026-04-12",
     category: "Valuation",
     readTime: "11 min read",
@@ -75,7 +75,7 @@ export const posts: Post[] = [
     slug: "monte-carlo-licensing-deals",
     title: "Monte Carlo simulation for licensing deal valuation",
     description:
-      "Why a single rNPV number loses you negotiation leverage — and how Monte Carlo simulation gives BD and IB teams a real probability distribution to negotiate against.",
+      "Monte Carlo simulation turns a single rNPV into a probability distribution by varying PTRS, peak sales, and discount rate across thousands of iterations — the range BD and IB teams negotiate against.",
     date: "2026-04-18",
     category: "Valuation",
     readTime: "9 min read",
@@ -116,7 +116,7 @@ export const posts: Post[] = [
     slug: "biopharma-diligence-checklist",
     title: "The biopharma M&A diligence checklist analysts actually use",
     description:
-      "A working checklist for biopharma M&A and licensing diligence — covering science, IP, regulatory, manufacturing, and commercial — distilled from how BD and banking teams actually run the workstream.",
+      "Biopharma M&A diligence covers six workstreams — scientific, IP, regulatory, CMC, commercial, and financial. The working checklist deal teams actually use, organized by what kills a deal.",
     date: "2026-04-25",
     category: "Diligence",
     readTime: "12 min read",
@@ -172,7 +172,7 @@ export const posts: Post[] = [
     slug: "licensing-vs-acquisition",
     title: "Licensing vs. acquisition: how biopharma BD teams actually decide",
     description:
-      "The framework BD&L teams use to choose between in-licensing a single asset and acquiring the company that owns it — and the factors that decide which path wins.",
+      "License when you want a single asset, optionality, and capped exposure. Acquire when the asset is inseparable from the team, IP, or platform that built it. The decision framework BD&L teams actually apply.",
     date: "2026-05-02",
     category: "Deal Strategy",
     readTime: "8 min read",

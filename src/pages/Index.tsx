@@ -40,12 +40,26 @@ const softwareSchema = {
   "@type": "SoftwareApplication",
   name: "Alexandria",
   applicationCategory: "BusinessApplication",
+  applicationSubCategory: "Biopharma M&A and licensing diligence",
   operatingSystem: "Web",
   description:
     "AI-native diligence engine for biopharma licensing and M&A deals. Cross-references a live pharma corpus and your data room, runs rNPV and Monte Carlo analysis, and returns decision-ready deliverables.",
   url: "https://www.alexandrialabs.uk/",
-  offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+  provider: { "@type": "Organization", name: "Alexandria", url: "https://www.alexandrialabs.uk/" },
+  audience: {
+    "@type": "BusinessAudience",
+    audienceType: "Investment banking healthcare, life-sciences consulting, biopharma BD&L teams",
+  },
 };
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.alexandrialabs.uk/" },
+  ],
+};
+
 const Index = () => {
   return (
     <>
@@ -58,6 +72,7 @@ const Index = () => {
       <meta property="og:url" content="https://www.alexandrialabs.uk/" />
       <meta property="og:type" content="website" />
       <script type="application/ld+json">{JSON.stringify(softwareSchema)}</script>
+      <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
     </Helmet>
     <main className="min-h-screen">
       <HeroSection />
