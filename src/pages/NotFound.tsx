@@ -17,8 +17,8 @@ const NotFound = () => {
       <meta name="robots" content="noindex" />
       <meta property="og:title" content="Page Not Found — Alexandria" />
       <meta property="og:description" content="The page you're looking for doesn't exist." />
-      <meta property="og:url" content="https://alexandria-mind-forge.lovable.app/404" />
-      <link rel="canonical" href="https://alexandria-mind-forge.lovable.app/404" />
+      <meta property="og:url" content="https://www.alexandrialabs.uk/404" />
+      <link rel="canonical" href="https://www.alexandrialabs.uk/404" />
     </Helmet>
     <div className="flex min-h-screen items-center justify-center bg-muted">
       <div className="text-center">

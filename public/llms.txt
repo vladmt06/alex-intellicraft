@@ -21,4 +21,4 @@ Primary users: investment banking healthcare teams, life-sciences consulting pra
 
 ## Optional
 
-- [Custom domain](https://www.alexandria-discovery.com): Primary marketing domain.
+- [Custom domain](https://www.alexandrialabs.uk): Primary marketing domain.

@@ -62,7 +62,7 @@ const InsightPost = () => {
 
   if (!post) return <Navigate to="/404" replace />;
 
-  const url = `https://alexandria-mind-forge.lovable.app/insights/${post.slug}`;
+  const url = `https://www.alexandrialabs.uk/insights/${post.slug}`;
   const related = posts.filter((p) => p.slug !== post.slug).slice(0, 3);
 
   const articleSchema = {
@@ -77,7 +77,7 @@ const InsightPost = () => {
       name: "Alexandria",
       logo: {
         "@type": "ImageObject",
-        url: "https://alexandria-mind-forge.lovable.app/favicon.ico",
+        url: "https://www.alexandrialabs.uk/favicon.ico",
       },
     },
     mainEntityOfPage: { "@type": "WebPage", "@id": url },
@@ -87,8 +87,8 @@ const InsightPost = () => {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://alexandria-mind-forge.lovable.app/" },
-      { "@type": "ListItem", position: 2, name: "Insights", item: "https://alexandria-mind-forge.lovable.app/insights" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.alexandrialabs.uk/" },
+      { "@type": "ListItem", position: 2, name: "Insights", item: "https://www.alexandrialabs.uk/insights" },
       { "@type": "ListItem", position: 3, name: post.title, item: url },
     ],
   };
