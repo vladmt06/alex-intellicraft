@@ -46,7 +46,7 @@ const Insights = () => {
             Insights
           </p>
           <h1 className="text-5xl md:text-6xl tracking-tight mb-6">
-            Notes from the diligence floor.
+            Biopharma diligence, valuation &amp; deal strategy.
           </h1>
           <p className="text-lg text-foreground/60 max-w-2xl mb-16">
             Working notes on biopharma licensing and M&amp;A — valuation methods, diligence
