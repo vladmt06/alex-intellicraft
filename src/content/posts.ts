@@ -75,7 +75,7 @@ export const posts: Post[] = [
     slug: "monte-carlo-licensing-deals",
     title: "Monte Carlo simulation for licensing deal valuation",
     description:
-      "Why a single rNPV number loses you negotiation leverage — and how Monte Carlo simulation gives BD and IB teams a real probability distribution to negotiate against.",
+      "Monte Carlo simulation turns a single rNPV into a probability distribution by varying PTRS, peak sales, and discount rate across thousands of iterations — the range BD and IB teams negotiate against.",
     date: "2026-04-18",
     category: "Valuation",
     readTime: "9 min read",
