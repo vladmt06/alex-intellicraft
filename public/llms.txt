@@ -1,0 +1,24 @@
+# Alexandria
+# Alexandria
+
+> AI-native diligence engine for biopharma M&A and licensing deals. Turns weeks of manual diligence into ten-minute decision-ready deliverables.
+
+Alexandria cross-references a continuously refreshed corpus of pharma research, clinical trials, patents, regulatory filings, and deal comps — alongside a user's own data room — then runs the analysis (rNPV, Monte Carlo, key metrics and indicators) and returns the output in the user's existing deliverable format. The interface is dynamic: the workspace adapts to the analyst's intent rather than returning generic 200-row tables.
+
+Primary users: investment banking healthcare teams, life-sciences consulting practices, and internal biopharma BD&L teams running licensing and M&A diligence.
+
+## Pages
+
+- [Home](/): Product overview, dynamic workspace demo, rNPV and Monte Carlo capabilities, secure data-room workflow, FAQ, and contact.
+- [Insights](/insights): Long-form notes on biopharma licensing and M&A diligence, valuation methods, and deal strategy.
+
+## Insights
+
+- [rNPV biotech valuation guide](/insights/rnpv-biotech-valuation): How to model risk-adjusted NPV for a biotech asset, with phase transition probabilities and a worked Phase 2 oncology example.
+- [Monte Carlo for licensing deals](/insights/monte-carlo-licensing-deals): Why a single rNPV loses negotiation leverage and how Monte Carlo simulation produces the distribution BD and IB teams negotiate against.
+- [Biopharma M&A diligence checklist](/insights/biopharma-diligence-checklist): The working diligence checklist used in practice — science, IP, regulatory, CMC, commercial, and financial.
+- [Licensing vs. acquisition](/insights/licensing-vs-acquisition): The framework BD teams use to decide between in-licensing a single asset and acquiring the company that owns it.
+
+## Optional
+
+- [Custom domain](https://www.alexandria-discovery.com): Primary marketing domain.
