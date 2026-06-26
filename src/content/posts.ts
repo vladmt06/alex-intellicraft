@@ -24,7 +24,7 @@ export const posts: Post[] = [
     slug: "rnpv-biotech-valuation",
     title: "How to model rNPV for a biotech asset (with a worked example)",
     description:
-      "A practical walkthrough of risk-adjusted NPV for biopharma assets — phase-by-phase probabilities, cash flow timing, and the assumptions most analysts get wrong.",
+      "rNPV discounts each future cash flow by both the time value of money and the cumulative probability a biotech program survives every prior clinical phase. A worked Phase 2 oncology example, with the assumptions analysts get wrong.",
     date: "2026-04-12",
     category: "Valuation",
     readTime: "11 min read",
