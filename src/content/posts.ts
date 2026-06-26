@@ -116,7 +116,7 @@ export const posts: Post[] = [
     slug: "biopharma-diligence-checklist",
     title: "The biopharma M&A diligence checklist analysts actually use",
     description:
-      "A working checklist for biopharma M&A and licensing diligence — covering science, IP, regulatory, manufacturing, and commercial — distilled from how BD and banking teams actually run the workstream.",
+      "Biopharma M&A diligence covers six workstreams — scientific, IP, regulatory, CMC, commercial, and financial. The working checklist deal teams actually use, organized by what kills a deal.",
     date: "2026-04-25",
     category: "Diligence",
     readTime: "12 min read",
