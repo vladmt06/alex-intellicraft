@@ -34,10 +34,6 @@ const HeroSection = () => {
         <h1 className="animate-fade-up text-5xl md:text-7xl lg:text-8xl leading-[0.95] tracking-tight max-w-4xl mb-8 text-white">
           The future of biopharma diligence.
         </h1>
-        <h1 className="sr-only">Alexandria — AI diligence platform for biopharma licensing &amp; M&amp;A</h1>
-        <h1 className="animate-fade-up text-5xl md:text-7xl lg:text-8xl leading-[0.95] tracking-tight max-w-4xl mb-8 text-white" hidden>
-          The future of diligence.
-        </h1>
         <p className="animate-fade-up-delay-1 text-lg md:text-xl max-w-2xl text-white/70 leading-relaxed">
           One platform for the biopharma deal workflow.
         </p>
