@@ -29,13 +29,13 @@ const HeroSection = () => {
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 py-32 flex flex-col justify-center min-h-full">
         <p className="animate-fade-up text-xs md:text-sm font-mono uppercase tracking-[0.2em] text-white/60 mb-6">
-          Diligence for licensing &amp; M&amp;A
+          {" "}
         </p>
         <h1 className="animate-fade-up text-5xl md:text-7xl lg:text-8xl leading-[0.95] tracking-tight max-w-4xl mb-8 text-white">
-          The death of<br />manual&nbsp;diligence.
+          The future of diligence.
         </h1>
         <p className="animate-fade-up-delay-1 text-lg md:text-xl max-w-2xl text-white/70 leading-relaxed">
-          Ask a question. Alexandria cross-references our curated biopharma database and returns the most relevant indicators so you can make a decision in hours, not months.
+          One platform for the biopharma deal workflow.
         </p>
         <a
           href="https://calendly.com"
