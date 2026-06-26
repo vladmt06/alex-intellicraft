@@ -172,7 +172,7 @@ export const posts: Post[] = [
     slug: "licensing-vs-acquisition",
     title: "Licensing vs. acquisition: how biopharma BD teams actually decide",
     description:
-      "The framework BD&L teams use to choose between in-licensing a single asset and acquiring the company that owns it — and the factors that decide which path wins.",
+      "License when you want a single asset, optionality, and capped exposure. Acquire when the asset is inseparable from the team, IP, or platform that built it. The decision framework BD&L teams actually apply.",
     date: "2026-05-02",
     category: "Deal Strategy",
     readTime: "8 min read",
