@@ -4,7 +4,7 @@ import { writeFileSync } from "fs";
 import { resolve } from "path";
 import { posts } from "../src/content/posts";
 
-const BASE_URL = "https://alexandria-mind-forge.lovable.app";
+const BASE_URL = "https://www.alexandrialabs.uk";
 
 interface SitemapEntry {
   path: string;

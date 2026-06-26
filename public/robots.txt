@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://alexandria-mind-forge.lovable.app/sitemap.xml
+Sitemap: https://www.alexandrialabs.uk/sitemap.xml

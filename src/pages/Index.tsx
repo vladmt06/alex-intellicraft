@@ -43,7 +43,7 @@ const softwareSchema = {
   operatingSystem: "Web",
   description:
     "AI-native diligence engine for biopharma licensing and M&A deals. Cross-references a live pharma corpus and your data room, runs rNPV and Monte Carlo analysis, and returns decision-ready deliverables.",
-  url: "https://alexandria-mind-forge.lovable.app/",
+  url: "https://www.alexandrialabs.uk/",
   offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
 };
 const Index = () => {
@@ -52,10 +52,10 @@ const Index = () => {
     <Helmet>
       <title>Alexandria — AI diligence for biopharma licensing &amp; M&amp;A</title>
       <meta name="description" content="Alexandria turns weeks of biopharma licensing and M&A diligence into ten-minute, decision-ready deliverables — rNPV, Monte Carlo, and a dynamic workspace over a live pharma corpus." />
-      <link rel="canonical" href="https://alexandria-mind-forge.lovable.app/" />
+      <link rel="canonical" href="https://www.alexandrialabs.uk/" />
       <meta property="og:title" content="Alexandria — AI diligence for biopharma licensing &amp; M&amp;A" />
       <meta property="og:description" content="Turn weeks of biopharma licensing and M&A diligence into ten-minute deliverables. rNPV, Monte Carlo, and a dynamic workspace over a live pharma corpus." />
-      <meta property="og:url" content="https://alexandria-mind-forge.lovable.app/" />
+      <meta property="og:url" content="https://www.alexandrialabs.uk/" />
       <meta property="og:type" content="website" />
       <script type="application/ld+json">{JSON.stringify(softwareSchema)}</script>
     </Helmet>

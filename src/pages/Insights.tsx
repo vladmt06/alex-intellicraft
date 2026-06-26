@@ -14,24 +14,24 @@ const Insights = () => {
           name="description"
           content="Working notes on biopharma licensing and M&A diligence — rNPV modeling, Monte Carlo simulation, deal structuring, and how BD&L teams evaluate assets in practice."
         />
-        <link rel="canonical" href="https://alexandria-mind-forge.lovable.app/insights" />
+        <link rel="canonical" href="https://www.alexandrialabs.uk/insights" />
         <meta property="og:title" content="Insights — Alexandria" />
         <meta
           property="og:description"
           content="Working notes on biopharma licensing and M&A diligence — rNPV, Monte Carlo, and deal strategy."
         />
-        <meta property="og:url" content="https://alexandria-mind-forge.lovable.app/insights" />
+        <meta property="og:url" content="https://www.alexandrialabs.uk/insights" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Blog",
             name: "Alexandria Insights",
-            url: "https://alexandria-mind-forge.lovable.app/insights",
+            url: "https://www.alexandrialabs.uk/insights",
             blogPost: sorted.map((p) => ({
               "@type": "BlogPosting",
               headline: p.title,
-              url: `https://alexandria-mind-forge.lovable.app/insights/${p.slug}`,
+              url: `https://www.alexandrialabs.uk/insights/${p.slug}`,
               datePublished: p.date,
               description: p.description,
             })),
