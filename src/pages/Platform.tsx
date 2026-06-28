@@ -28,11 +28,6 @@ const workflows = [
     body: "Stand up trackers and automatic alerts for new trial starts, data readouts, label changes, and deal activity — so your team stops digging and starts moving.",
   },
   {
-    tag: "Medical & scientific",
-    title: "Draft scientific documents in minutes, not weeks",
-    body: "Generate first drafts of mechanism summaries, indication briefs, and competitive scientific platforms. Edit in-platform or export to Word.",
-  },
-  {
     tag: "Portfolio strategy",
     title: "Evaluate more opportunities in parallel",
     body: "Run agents across programs, targets, and indications simultaneously. Surface the highest-conviction opportunities before the rest of the market sees them.",
@@ -101,8 +96,8 @@ const Platform = () => {
       <main className="min-h-screen bg-background">
         {/* Hero */}
         <section className="pt-40 pb-24 px-6">
-          <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
-            <div>
+          <div className="max-w-6xl mx-auto">
+            <div className="max-w-3xl">
               <p className="text-xs font-mono uppercase tracking-[0.2em] text-foreground/50 mb-6">
                 Platform
               </p>
@@ -122,8 +117,9 @@ const Platform = () => {
                 Contact us <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
-            <div className="aspect-[4/3] rounded-2xl border border-border bg-card p-8 relative overflow-hidden">
-              <div className="absolute inset-0 grid-bg opacity-40" />
+
+            <div className="mt-20 aspect-[4/3] rounded-2xl border border-border bg-card p-8 relative overflow-hidden">
+              <div className="absolute inset-0 opacity-40" />
               <div className="relative h-full flex flex-col justify-between">
                 <div className="flex items-center justify-between text-[10px] font-mono uppercase tracking-widest text-foreground/50">
                   <span>Scatter · Overall Survival vs PFS</span>
@@ -159,24 +155,18 @@ const Platform = () => {
 
         {/* Capabilities */}
         <section className="py-24 px-6 border-t border-border">
-          <div className="max-w-6xl mx-auto space-y-32">
-            {capabilities.map((cap, i) => (
-              <div
-                key={cap.eyebrow}
-                className={`grid lg:grid-cols-2 gap-16 items-center ${i % 2 ? "lg:[&>div:first-child]:order-2" : ""}`}
-              >
-                <div>
-                  <p className="text-xs font-mono uppercase tracking-[0.2em] text-primary mb-4">
-                    {cap.eyebrow}
-                  </p>
-                  <h2 className="text-3xl md:text-4xl tracking-tight mb-6 leading-tight">
-                    {cap.title}
-                  </h2>
-                  <p className="text-lg text-foreground/70 leading-relaxed max-w-xl">
-                    {cap.body}
-                  </p>
-                </div>
-                <div className="aspect-[4/3] rounded-2xl border border-border bg-card grid-bg opacity-90" />
+          <div className="max-w-6xl mx-auto space-y-24">
+            {capabilities.map((cap) => (
+              <div key={cap.eyebrow} className="max-w-3xl">
+                <p className="text-xs font-mono uppercase tracking-[0.2em] text-primary mb-4">
+                  {cap.eyebrow}
+                </p>
+                <h2 className="text-3xl md:text-4xl tracking-tight mb-6 leading-tight">
+                  {cap.title}
+                </h2>
+                <p className="text-lg text-foreground/70 leading-relaxed">
+                  {cap.body}
+                </p>
               </div>
             ))}
           </div>
@@ -188,9 +178,9 @@ const Platform = () => {
             <h2 className="text-3xl md:text-5xl tracking-tight mb-16 max-w-3xl">
               Tailored workflows for biopharma deal teams.
             </h2>
-            <div className="grid md:grid-cols-2 gap-px bg-border">
+            <div className="max-w-3xl space-y-16">
               {workflows.map((w) => (
-                <div key={w.tag} className="bg-background p-10">
+                <div key={w.tag}>
                   <p className="text-xs font-mono uppercase tracking-[0.2em] text-primary mb-4">
                     {w.tag}
                   </p>
@@ -208,14 +198,16 @@ const Platform = () => {
             <h2 className="text-3xl md:text-4xl tracking-tight mb-16 max-w-2xl">
               Built to pharma software standards from day one.
             </h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="max-w-3xl space-y-12">
               {standards.map(({ icon: Icon, title, body }) => (
-                <div key={title}>
-                  <div className="w-10 h-10 rounded-full border border-border flex items-center justify-center mb-5">
+                <div key={title} className="flex gap-5">
+                  <div className="w-10 h-10 rounded-full border border-border flex items-center justify-center shrink-0">
                     <Icon className="w-4 h-4 text-primary" strokeWidth={1.5} />
                   </div>
-                  <h3 className="text-lg tracking-tight mb-3">{title}</h3>
-                  <p className="text-sm text-foreground/60 leading-relaxed">{body}</p>
+                  <div>
+                    <h3 className="text-lg tracking-tight mb-3">{title}</h3>
+                    <p className="text-sm text-foreground/60 leading-relaxed">{body}</p>
+                  </div>
                 </div>
               ))}
             </div>
