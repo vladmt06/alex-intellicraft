@@ -18,6 +18,12 @@ const InsightsNav = () => {
           </Link>
           <div className="flex items-center justify-center gap-10 w-full">
             <Link
+              to="/platform"
+              className="font-sans text-sm font-medium text-foreground hover:text-foreground/70 transition-colors"
+            >
+              Platform
+            </Link>
+            <Link
               to="/insights"
               className="font-sans text-sm font-medium text-foreground hover:text-foreground/70 transition-colors"
             >

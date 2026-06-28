@@ -7,6 +7,7 @@ import Index from "./pages/Index.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import Insights from "./pages/Insights.tsx";
 import InsightPost from "./pages/InsightPost.tsx";
+import Platform from "./pages/Platform.tsx";
 
 const queryClient = new QueryClient();
 
@@ -18,6 +19,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/platform" element={<Platform />} />
           <Route path="/insights" element={<Insights />} />
           <Route path="/insights/:slug" element={<InsightPost />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
