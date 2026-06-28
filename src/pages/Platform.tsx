@@ -178,7 +178,7 @@ const Platform = () => {
             <h2 className="text-3xl md:text-5xl tracking-tight mb-16 max-w-3xl">
               Tailored workflows for biopharma deal teams.
             </h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-border">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-border">
               {workflows.map((w) => (
                 <div key={w.tag} className="bg-background p-10">
                   <p className="text-xs font-mono uppercase tracking-[0.2em] text-primary mb-4">
