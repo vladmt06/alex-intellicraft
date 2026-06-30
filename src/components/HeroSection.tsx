@@ -35,7 +35,7 @@ const HeroSection = () => {
           The future of biopharma decision-making.
         </h1>
         <p className="animate-fade-up-delay-1 text-lg md:text-xl max-w-2xl text-white/70 leading-relaxed">
-          One platform for the biopharma deal workflow.
+          An autonomous workforce for deal diligence and live screening
         </p>
         <a
           href="https://calendly.com"
