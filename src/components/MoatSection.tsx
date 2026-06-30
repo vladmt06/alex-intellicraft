@@ -23,7 +23,7 @@ const MoatSection = () => {
             className="text-5xl md:text-7xl tracking-tight"
             style={{ color: "hsl(0 0% 95%)" }}
           >
-            The product speaks for itself.
+            Full data coverage
           </h2>
         </div>
 
