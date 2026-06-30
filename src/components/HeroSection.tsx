@@ -32,7 +32,7 @@ const HeroSection = () => {
           {" "}
         </p>
         <h1 className="animate-fade-up text-5xl md:text-7xl lg:text-8xl leading-[0.95] tracking-tight max-w-4xl mb-8 text-white">
-          The future of biopharma diligence.
+          The future of biopharma decision-making.
         </h1>
         <p className="animate-fade-up-delay-1 text-lg md:text-xl max-w-2xl text-white/70 leading-relaxed">
           One platform for the biopharma deal workflow.
