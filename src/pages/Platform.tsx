@@ -146,7 +146,8 @@ const Platform = () => {
               </div>
             ))}
           </div>
-        </section>
+        </div>
+      </section>
 
         {/* Workflows */}
         <section className="pt-32 pb-24 px-6 border-t border-border bg-secondary/40">
