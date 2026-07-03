@@ -140,7 +140,7 @@ const Platform = () => {
         </section>
 
         {/* Workflows */}
-        <section className="py-32 px-6 border-t border-border bg-secondary/40">
+        <section className="pt-32 pb-24 px-6 border-t border-border bg-secondary/40">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-5xl tracking-tight mb-16 max-w-3xl">
               Tailored workflows for biopharma deal teams.
