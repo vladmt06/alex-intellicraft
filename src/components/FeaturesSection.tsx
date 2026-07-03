@@ -34,27 +34,6 @@ const FeaturesSection = () => {
       style={{ background: "hsl(0 0% 5%)" }}
     >
       <div className="max-w-6xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7, ease: "easeOut" }}
-          className="mb-16"
-        >
-          <p
-            className="text-[10px] tracking-widest uppercase mb-3"
-            style={{ fontFamily: "'JetBrains Mono', monospace", color: "hsl(0 0% 55%)" }}
-          >
-            Capabilities
-          </p>
-          <h2
-            className="text-4xl md:text-5xl tracking-tight max-w-2xl"
-            style={{ color: "hsl(0 0% 95%)" }}
-          >
-            Everything diligence demands, in one workspace.
-          </h2>
-        </motion.div>
-
         <div className="grid grid-cols-1 md:grid-cols-2 gap-px" style={{ background: "hsl(0 0% 12%)" }}>
           {features.map((f, i) => (
             <motion.div

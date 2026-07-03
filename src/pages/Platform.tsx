@@ -20,9 +20,9 @@ const capabilities = [
     body: "Custom agents watch the assets, competitors, and indications you care about. When a new trial readout, SEC filing, patent, label change, or deal headline drops, you know immediately — with context, not clutter.",
   },
   {
-    eyebrow: "Generate",
-    title: "Produce the deliverables that drive decisions",
-    body: "Produce first-draft IC memos, valuation models, target landscapes, and Monte Carlo simulations in your team's existing format. Keep them live with autonomous updates as new data lands.",
+    eyebrow: "Workspace",
+    title: "A dynamic workspace for any deal, asset, or landscape",
+    body: "Dig deep into any target, indication, or competitive set through an interactive workspace. Ask follow-ups, explore scenarios, and get to a decision-ready answer in minutes instead of weeks.",
   },
 ];
 
