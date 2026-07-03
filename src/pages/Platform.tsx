@@ -117,39 +117,6 @@ const Platform = () => {
                 Contact us <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
-
-            <div className="mt-20 aspect-[4/3] rounded-2xl border border-border bg-card p-8 relative overflow-hidden">
-              <div className="absolute inset-0 opacity-40" />
-              <div className="relative h-full flex flex-col justify-between">
-                <div className="flex items-center justify-between text-[10px] font-mono uppercase tracking-widest text-foreground/50">
-                  <span>Scatter · Overall Survival vs PFS</span>
-                  <span>n = 218</span>
-                </div>
-                <div className="relative flex-1 mt-6">
-                  <svg viewBox="0 0 400 240" className="w-full h-full">
-                    {Array.from({ length: 80 }).map((_, i) => {
-                      const x = 20 + (i * 37) % 360;
-                      const y = 20 + (i * 53) % 200;
-                      return (
-                        <circle
-                          key={i}
-                          cx={x}
-                          cy={y}
-                          r={2.5}
-                          className="fill-primary/40"
-                        />
-                      );
-                    })}
-                    <circle cx={210} cy={70} r={6} className="fill-primary" />
-                  </svg>
-                  <div className="absolute top-12 left-1/2 bg-primary text-primary-foreground rounded-lg p-3 text-xs font-mono shadow-lg">
-                    <div className="font-semibold mb-1">Erlotinib</div>
-                    <div>PFS: 11 mo</div>
-                    <div>OS: 32 mo</div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </section>
 
@@ -173,7 +140,7 @@ const Platform = () => {
         </section>
 
         {/* Workflows */}
-        <section className="py-32 px-6 border-t border-border bg-secondary/40">
+        <section className="pt-32 pb-24 px-6 border-t border-border bg-secondary/40">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-5xl tracking-tight mb-16 max-w-3xl">
               Tailored workflows for biopharma deal teams.
@@ -193,7 +160,7 @@ const Platform = () => {
         </section>
 
         {/* Standards */}
-        <section className="py-32 px-6 border-t border-border">
+        <section className="pt-24 pb-32 px-6 border-t border-border">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl tracking-tight mb-16 max-w-2xl">
               Built to pharma software standards from day one.
