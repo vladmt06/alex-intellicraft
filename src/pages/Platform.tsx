@@ -127,8 +127,12 @@ const Platform = () => {
 
         {/* Capabilities */}
         <section className="py-24 px-6 border-t border-border">
-          <div className="max-w-6xl mx-auto space-y-24">
-            {capabilities.map((cap) => (
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl md:text-5xl tracking-tight mb-16 max-w-3xl">
+              Decision-making infrastructure for biopharma deals.
+            </h2>
+            <div className="space-y-24">
+              {capabilities.map((cap) => (
               <div key={cap.eyebrow} className="max-w-3xl">
                 <p className="text-xs font-mono uppercase tracking-[0.2em] text-primary mb-4">
                   {cap.eyebrow}
