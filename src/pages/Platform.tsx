@@ -117,7 +117,8 @@ const Platform = () => {
                 Contact us <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
-
+          </div>
+        </section>
 
         {/* Capabilities */}
         <section className="py-24 px-6 border-t border-border">
