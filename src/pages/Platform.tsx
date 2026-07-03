@@ -160,7 +160,7 @@ const Platform = () => {
         </section>
 
         {/* Standards */}
-        <section className="py-32 px-6 border-t border-border">
+        <section className="pt-24 pb-32 px-6 border-t border-border">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl tracking-tight mb-16 max-w-2xl">
               Built to pharma software standards from day one.
