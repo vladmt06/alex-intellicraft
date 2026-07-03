@@ -118,40 +118,6 @@ const Platform = () => {
               </Link>
             </div>
 
-            <div className="mt-20 aspect-[4/3] rounded-2xl border border-border bg-card p-8 relative overflow-hidden">
-              <div className="absolute inset-0 opacity-40" />
-              <div className="relative h-full flex flex-col justify-between">
-                <div className="flex items-center justify-between text-[10px] font-mono uppercase tracking-widest text-foreground/50">
-                  <span>Scatter · Overall Survival vs PFS</span>
-                  <span>n = 218</span>
-                </div>
-                <div className="relative flex-1 mt-6">
-                  <svg viewBox="0 0 400 240" className="w-full h-full">
-                    {Array.from({ length: 80 }).map((_, i) => {
-                      const x = 20 + (i * 37) % 360;
-                      const y = 20 + (i * 53) % 200;
-                      return (
-                        <circle
-                          key={i}
-                          cx={x}
-                          cy={y}
-                          r={2.5}
-                          className="fill-primary/40"
-                        />
-                      );
-                    })}
-                    <circle cx={210} cy={70} r={6} className="fill-primary" />
-                  </svg>
-                  <div className="absolute top-12 left-1/2 bg-primary text-primary-foreground rounded-lg p-3 text-xs font-mono shadow-lg">
-                    <div className="font-semibold mb-1">Erlotinib</div>
-                    <div>PFS: 11 mo</div>
-                    <div>OS: 32 mo</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* Capabilities */}
         <section className="py-24 px-6 border-t border-border">
