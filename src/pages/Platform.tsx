@@ -5,18 +5,23 @@ import InsightsNav from "@/components/InsightsNav";
 
 const capabilities = [
   {
-    eyebrow: "Ingest & structure",
-    title: "Transform scattered data into decision-ready intelligence",
+    eyebrow: "Ingest",
+    title: "Turn every source into decision-ready intelligence",
     body: "Alexandria ingests and structures your full diligence landscape — internal data rooms, clinical trial registries, SEC filings, scientific literature, patent records, and live deal comps. Every output traces back to its source.",
   },
   {
     eyebrow: "Automate",
-    title: "Build and deploy custom diligence agents",
-    body: "Design repeatable workflows for the work your team does every week — asset screens, comp pulls, rNPV refreshes, KOL maps. Build once, run at deal speed, free senior bandwidth for judgment.",
+    title: "Run diligence workflows at deal speed",
+    body: "Design repeatable agents for the work your team does every week — asset screens, comp pulls, rNPV refreshes, KOL maps. Build once, run autonomously, and free senior bandwidth for judgment.",
+  },
+  {
+    eyebrow: "Monitor",
+    title: "Get alerted the moment a deal moves",
+    body: "Custom agents watch the assets, competitors, and indications you care about. When a new trial readout, SEC filing, patent, label change, or deal headline drops, you know immediately — with context, not clutter.",
   },
   {
     eyebrow: "Generate",
-    title: "Generate the deliverables that drive deals",
+    title: "Produce the deliverables that drive decisions",
     body: "Produce first-draft IC memos, valuation models, target landscapes, and Monte Carlo simulations in your team's existing format. Keep them live with autonomous updates as new data lands.",
   },
 ];
@@ -122,8 +127,12 @@ const Platform = () => {
 
         {/* Capabilities */}
         <section className="py-24 px-6 border-t border-border">
-          <div className="max-w-6xl mx-auto space-y-24">
-            {capabilities.map((cap) => (
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl md:text-5xl tracking-tight mb-16 max-w-3xl">
+              Decision-making infrastructure for biopharma deals.
+            </h2>
+            <div className="space-y-24">
+              {capabilities.map((cap) => (
               <div key={cap.eyebrow} className="max-w-3xl">
                 <p className="text-xs font-mono uppercase tracking-[0.2em] text-primary mb-4">
                   {cap.eyebrow}
@@ -137,7 +146,8 @@ const Platform = () => {
               </div>
             ))}
           </div>
-        </section>
+        </div>
+      </section>
 
         {/* Workflows */}
         <section className="pt-32 pb-24 px-6 border-t border-border bg-secondary/40">
