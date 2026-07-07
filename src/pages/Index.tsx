@@ -79,7 +79,7 @@ const Index = () => {
       <ArchitectureSection />
       <UseCasesScrollSection />
       <DemoSection />
-      <FeaturesSection />
+      
       <MoatSection />
       <FAQ items={homeFaqs} />
       <ContactSection />
