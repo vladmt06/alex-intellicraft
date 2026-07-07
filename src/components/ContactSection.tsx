@@ -15,87 +15,40 @@ const ContactSection = () => {
   };
 
   return (
-    <section
-      id="contact"
-      className="relative py-32 px-6"
-      style={{ background: "hsl(0 0% 3%)" }}
-    >
+    <section id="contact" className="relative py-32 px-6 bg-background border-t border-border">
       <div className="max-w-2xl mx-auto">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          transition={{ duration: 0.6 }}
+          className="mb-14"
         >
-          <h2
-            className="text-4xl md:text-5xl font-light mb-4"
-            style={{
-              fontFamily: "'DM Serif Display', serif",
-              color: "hsl(0 0% 92%)",
-            }}
-          >
-            Get in Touch
+          <p className="text-xs font-mono uppercase tracking-[0.2em] text-foreground/50 mb-4">
+            Contact
+          </p>
+          <h2 className="text-4xl md:text-5xl tracking-tight text-foreground mb-4">
+            Get in touch.
           </h2>
-          <p
-            className="text-base"
-            style={{
-              fontFamily: "'DM Sans', sans-serif",
-              color: "hsl(0 0% 50%)",
-            }}
-          >
+          <p className="text-base text-foreground/60">
             Interested in what Alexandria can do for your team? Reach out.
           </p>
         </motion.div>
 
         {submitted ? (
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            className="text-center py-16"
-          >
-            <p
-              className="text-2xl font-light"
-              style={{
-                fontFamily: "'DM Serif Display', serif",
-                color: "hsl(0 0% 92%)",
-              }}
-            >
-              Thank you for reaching out.
-            </p>
-            <p
-              className="mt-3 text-sm"
-              style={{
-                fontFamily: "'DM Sans', sans-serif",
-                color: "hsl(0 0% 50%)",
-              }}
-            >
-              We'll be in touch shortly.
-            </p>
-          </motion.div>
+          <div className="py-16">
+            <p className="text-2xl tracking-tight text-foreground">Thank you for reaching out.</p>
+            <p className="mt-3 text-sm text-foreground/60">We'll be in touch shortly.</p>
+          </div>
         ) : (
-          <motion.form
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            onSubmit={handleSubmit}
-            className="space-y-6"
-          >
+          <form onSubmit={handleSubmit} className="space-y-6">
             {[
               { name: "name", label: "Name", type: "text", placeholder: "Your full name" },
               { name: "email", label: "Business Email", type: "email", placeholder: "you@company.com" },
               { name: "business", label: "Business", type: "text", placeholder: "Your organisation" },
             ].map((field) => (
               <div key={field.name}>
-                <label
-                  htmlFor={field.name}
-                  className="block text-xs uppercase tracking-[0.2em] mb-3"
-                  style={{
-                    fontFamily: "'DM Sans', sans-serif",
-                    color: "hsl(0 0% 45%)",
-                  }}
-                >
+                <label htmlFor={field.name} className="block text-xs uppercase tracking-[0.2em] mb-3 text-foreground/50 font-mono">
                   {field.label}
                 </label>
                 <input
@@ -106,27 +59,13 @@ const ContactSection = () => {
                   value={form[field.name as keyof typeof form]}
                   onChange={handleChange}
                   required
-                  className="w-full bg-transparent border-b py-3 text-sm outline-none transition-colors duration-300 placeholder:opacity-30"
-                  style={{
-                    fontFamily: "'DM Sans', sans-serif",
-                    color: "hsl(0 0% 88%)",
-                    borderColor: "hsl(0 0% 18%)",
-                  }}
-                  onFocus={(e) => (e.target.style.borderColor = "hsl(0 0% 40%)")}
-                  onBlur={(e) => (e.target.style.borderColor = "hsl(0 0% 18%)")}
+                  className="w-full bg-transparent border-b border-border py-3 text-sm outline-none text-foreground placeholder:text-foreground/30 focus:border-foreground transition-colors"
                 />
               </div>
             ))}
 
             <div>
-              <label
-                htmlFor="message"
-                className="block text-xs uppercase tracking-[0.2em] mb-3"
-                style={{
-                  fontFamily: "'DM Sans', sans-serif",
-                  color: "hsl(0 0% 45%)",
-                }}
-              >
+              <label htmlFor="message" className="block text-xs uppercase tracking-[0.2em] mb-3 text-foreground/50 font-mono">
                 Message
               </label>
               <textarea
@@ -137,62 +76,29 @@ const ContactSection = () => {
                 onChange={handleChange}
                 required
                 rows={4}
-                className="w-full bg-transparent border-b py-3 text-sm outline-none transition-colors duration-300 resize-none placeholder:opacity-30"
-                style={{
-                  fontFamily: "'DM Sans', sans-serif",
-                  color: "hsl(0 0% 88%)",
-                  borderColor: "hsl(0 0% 18%)",
-                }}
-                onFocus={(e) => (e.target.style.borderColor = "hsl(0 0% 40%)")}
-                onBlur={(e) => (e.target.style.borderColor = "hsl(0 0% 18%)")}
+                className="w-full bg-transparent border-b border-border py-3 text-sm outline-none resize-none text-foreground placeholder:text-foreground/30 focus:border-foreground transition-colors"
               />
             </div>
 
             <div className="pt-6">
-              <motion.button
+              <button
                 type="submit"
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                className="w-full py-4 text-xs uppercase tracking-[0.25em] font-medium transition-all duration-300"
-                style={{
-                  fontFamily: "'DM Sans', sans-serif",
-                  color: "hsl(0 0% 88%)",
-                  background: "hsl(0 0% 10%)",
-                  border: "1px solid hsl(0 0% 18%)",
-                  borderRadius: "2px",
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.background = "hsl(0 0% 15%)";
-                  e.currentTarget.style.borderColor = "hsl(0 0% 30%)";
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.background = "hsl(0 0% 10%)";
-                  e.currentTarget.style.borderColor = "hsl(0 0% 18%)";
-                }}
+                className="inline-flex items-center px-6 py-3 text-sm font-medium text-background bg-foreground hover:bg-foreground/90 transition-colors"
               >
                 Send Inquiry
-              </motion.button>
+              </button>
             </div>
 
-            <p
-              className="text-center text-xs mt-6"
-              style={{
-                fontFamily: "'DM Sans', sans-serif",
-                color: "hsl(0 0% 35%)",
-              }}
-            >
+            <p className="text-xs text-foreground/50 pt-2">
               Or reach us directly at{" "}
               <a
                 href="mailto:logan@alexandrialabs.uk"
-                className="underline underline-offset-4 transition-colors duration-200"
-                style={{ color: "hsl(0 0% 55%)" }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = "hsl(0 0% 80%)")}
-                onMouseLeave={(e) => (e.currentTarget.style.color = "hsl(0 0% 55%)")}
+                className="underline underline-offset-4 text-foreground/70 hover:text-foreground transition-colors"
               >
                 logan@alexandrialabs.uk
               </a>
             </p>
-          </motion.form>
+          </form>
         )}
       </div>
     </section>
