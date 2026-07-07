@@ -3,44 +3,42 @@ import { Helmet } from "react-helmet-async";
 import { ArrowRight, ShieldCheck, Lock, Plug, Cloud } from "lucide-react";
 import InsightsNav from "@/components/InsightsNav";
 
-const capabilities = [
+const products = [
   {
-    eyebrow: "Ingest",
-    title: "Turn every source into decision-ready intelligence",
-    body: "Alexandria ingests and structures your full diligence landscape — internal data rooms, clinical trial registries, SEC filings, scientific literature, patent records, and live deal comps. Every output traces back to its source.",
+    name: "Corpus",
+    tagline: "The live source of truth for biopharma.",
+    description:
+      "A continuously refreshed corpus spanning 100M+ research papers, 900K+ clinical trials, 1M+ pharma patents, FDA and EMA records, biomarkers, protein pathways, conference abstracts, and live deal comps. Every field is source-traced and refresh-dated.",
   },
   {
-    eyebrow: "Automate",
-    title: "Run diligence workflows at deal speed",
-    body: "Design repeatable agents for the work your team does every week — asset screens, comp pulls, rNPV refreshes, KOL maps. Build once, run autonomously, and free senior bandwidth for judgment.",
+    name: "Workspace",
+    tagline: "Ask, explore, decide.",
+    description:
+      "A dynamic interface that reshapes around your intent. Dig into a target, indication, or competitive set, ask follow-ups, run scenarios, and get to a decision-ready answer in minutes — with a citation on every claim.",
   },
   {
-    eyebrow: "Monitor",
-    title: "Get alerted the moment a deal moves",
-    body: "Custom agents watch the assets, competitors, and indications you care about. When a new trial readout, SEC filing, patent, label change, or deal headline drops, you know immediately — with context, not clutter.",
+    name: "Workflow Agents",
+    tagline: "Run diligence work on autopilot.",
+    description:
+      "Prebuilt or custom agents for the work your team runs every week — asset screens, competitor pulls, rNPV refreshes, KOL maps, indication landscapes. Build once, run on a schedule, and free senior bandwidth for judgment.",
   },
   {
-    eyebrow: "Workspace",
-    title: "A dynamic workspace for any deal, asset, or landscape",
-    body: "Dig deep into any target, indication, or competitive set through an interactive workspace. Ask follow-ups, explore scenarios, and get to a decision-ready answer in minutes instead of weeks.",
-  },
-];
-
-const workflows = [
-  {
-    tag: "Competitive intelligence",
-    title: "Track competitors in real time",
-    body: "Stand up trackers and automatic alerts for new trial starts, data readouts, label changes, and deal activity — so your team stops digging and starts moving.",
+    name: "Valuation Studio",
+    tagline: "rNPV and Monte Carlo, live.",
+    description:
+      "Risk-adjusted NPV models and Monte Carlo simulations built from live trial, regulatory, and comparable-deal data. Every input traces to its source; every assumption can be swapped and rerun in seconds.",
   },
   {
-    tag: "Portfolio strategy",
-    title: "Evaluate more opportunities in parallel",
-    body: "Run agents across programs, targets, and indications simultaneously. Surface the highest-conviction opportunities before the rest of the market sees them.",
+    name: "Monitor",
+    tagline: "Know the moment a deal moves.",
+    description:
+      "Custom watchers on the assets, competitors, and indications you care about. Get alerted the moment a trial readout, SEC filing, patent, label change, or deal headline drops — with context, not clutter.",
   },
   {
-    tag: "Business development",
-    title: "Accelerate early-stage diligence",
-    body: "Build workflows that flag risks and opportunities across dozens of assets at once — reducing SME burden and getting your team to conviction faster.",
+    name: "Deliverable Studio",
+    tagline: "Ships in your team's format.",
+    description:
+      "Submit a past memo, model, or IC deck once. Every future output — diligence pack, valuation model, indicator summary — comes back in that exact format, ready to export and send.",
   },
 ];
 
@@ -74,13 +72,13 @@ const Platform = () => {
         <title>Platform — Alexandria | AI-native biopharma diligence</title>
         <meta
           name="description"
-          content="Alexandria is the AI-native diligence platform for biopharma licensing and M&A — ingest, automate, and generate decision-ready deliverables over a live pharma corpus and your data room."
+          content="Alexandria is the AI-native diligence platform for biopharma licensing and M&A — six purpose-built products across corpus, workspace, agents, valuation, monitoring, and deliverables."
         />
         <link rel="canonical" href="https://www.alexandrialabs.uk/platform" />
         <meta property="og:title" content="Platform — Alexandria" />
         <meta
           property="og:description"
-          content="Ingest, automate, and generate biopharma diligence — built for BD&L, banking healthcare, and life-sciences consulting teams."
+          content="Six purpose-built products for biopharma diligence — corpus, workspace, agents, valuation, monitoring, deliverables."
         />
         <meta property="og:url" content="https://www.alexandrialabs.uk/platform" />
         <meta property="og:type" content="website" />
@@ -102,75 +100,65 @@ const Platform = () => {
         {/* Hero */}
         <section className="pt-40 pb-24 px-6">
           <div className="max-w-6xl mx-auto">
-            <div className="max-w-3xl">
-              <p className="text-xs font-mono uppercase tracking-[0.2em] text-foreground/50 mb-6">
-                Platform
-              </p>
-              <h1 className="text-5xl md:text-6xl lg:text-7xl tracking-tight leading-[0.95] mb-8">
-                A platform built for experts, by experts.
-              </h1>
-              <p className="text-lg text-foreground/70 leading-relaxed max-w-xl mb-10">
-                Our team has supported some of the most significant biopharma deals of the past
-                decade, built production AI systems at scale, and shipped software inside the
-                world's largest life-sciences enterprises. Alexandria is the diligence platform
-                we wished existed.
-              </p>
-              <Link
-                to="/#contact"
-                className="inline-flex items-center gap-2 px-6 py-3 text-sm font-medium text-background bg-foreground rounded-full hover:bg-foreground/90 transition-colors"
-              >
-                Contact us <ArrowRight className="w-4 h-4" />
-              </Link>
+            <p className="text-xs font-mono uppercase tracking-[0.2em] text-foreground/50 mb-10">
+              Platform Overview
+            </p>
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-end">
+              <div className="lg:col-span-7">
+                <h1 className="text-5xl md:text-6xl lg:text-7xl tracking-tight leading-[1.02]">
+                  Engineered for every biopharma decision.
+                </h1>
+              </div>
+              <div className="lg:col-span-5 lg:pb-3">
+                <p className="text-lg text-foreground/70 leading-relaxed mb-8 max-w-md">
+                  Six purpose-built products spanning corpus, workspace, agents, valuation, monitoring, and deliverables — one platform for the modern deal team.
+                </p>
+                <Link
+                  to="/#contact"
+                  className="inline-flex items-center gap-2 px-5 py-3 text-sm font-medium text-background bg-foreground hover:bg-foreground/90 transition-colors"
+                >
+                  Request a demo <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
             </div>
           </div>
         </section>
 
-        {/* Capabilities */}
-        <section className="py-24 px-6 border-t border-border">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl md:text-5xl tracking-tight mb-16 max-w-3xl">
-              Decision-making infrastructure for biopharma deals.
+        {/* Products */}
+        <section className="border-t border-border">
+          <div className="max-w-6xl mx-auto px-6 pt-24 pb-4">
+            <h2 className="text-3xl md:text-5xl tracking-tight max-w-3xl">
+              One platform. Six concrete products.
             </h2>
-            <div className="space-y-24">
-              {capabilities.map((cap) => (
-              <div key={cap.eyebrow} className="max-w-3xl">
-                <p className="text-xs font-mono uppercase tracking-[0.2em] text-primary mb-4">
-                  {cap.eyebrow}
-                </p>
-                <h2 className="text-3xl md:text-4xl tracking-tight mb-6 leading-tight">
-                  {cap.title}
-                </h2>
-                <p className="text-lg text-foreground/70 leading-relaxed">
-                  {cap.body}
-                </p>
-              </div>
-            ))}
+            <p className="text-lg text-foreground/60 leading-relaxed max-w-2xl mt-6">
+              Every module is purpose-built for biopharma licensing and M&amp;A workflows. Use them independently or as a stack.
+            </p>
           </div>
-        </div>
-      </section>
 
-        {/* Workflows */}
-        <section className="pt-32 pb-24 px-6 border-t border-border bg-secondary/40">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl md:text-5xl tracking-tight mb-16 max-w-3xl">
-              Tailored workflows for biopharma deal teams.
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-border">
-              {workflows.map((w) => (
-                <div key={w.tag} className="bg-background p-10">
-                  <p className="text-xs font-mono uppercase tracking-[0.2em] text-primary mb-4">
-                    {w.tag}
+          <div className="max-w-6xl mx-auto px-6 pt-20 pb-24">
+            <div className="grid grid-cols-1 md:grid-cols-2 border-t border-l border-border">
+              {products.map((p) => (
+                <article
+                  key={p.name}
+                  className="p-10 md:p-12 border-b border-r border-border"
+                >
+                  <p className="text-[10px] font-mono uppercase tracking-[0.25em] text-foreground/45 mb-6">
+                    {p.name}
                   </p>
-                  <h3 className="text-2xl tracking-tight mb-4">{w.title}</h3>
-                  <p className="text-foreground/70 leading-relaxed">{w.body}</p>
-                </div>
+                  <h3 className="text-2xl md:text-3xl tracking-tight mb-5 leading-tight">
+                    {p.tagline}
+                  </h3>
+                  <p className="text-sm md:text-base text-foreground/65 leading-relaxed max-w-md">
+                    {p.description}
+                  </p>
+                </article>
               ))}
             </div>
           </div>
         </section>
 
         {/* Standards */}
-        <section className="pt-24 pb-32 px-6 border-t border-border">
+        <section className="py-32 px-6 border-t border-border">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl tracking-tight mb-16 max-w-2xl">
               Built to pharma software standards from day one.
@@ -178,8 +166,8 @@ const Platform = () => {
             <div className="max-w-3xl space-y-12">
               {standards.map(({ icon: Icon, title, body }) => (
                 <div key={title} className="flex gap-5">
-                  <div className="w-10 h-10 rounded-full border border-border flex items-center justify-center shrink-0">
-                    <Icon className="w-4 h-4 text-primary" strokeWidth={1.5} />
+                  <div className="w-10 h-10 border border-border flex items-center justify-center shrink-0">
+                    <Icon className="w-4 h-4 text-foreground" strokeWidth={1.5} />
                   </div>
                   <div>
                     <h3 className="text-lg tracking-tight mb-3">{title}</h3>
@@ -202,7 +190,7 @@ const Platform = () => {
             </p>
             <Link
               to="/#contact"
-              className="inline-flex items-center gap-2 px-6 py-3 text-sm font-medium text-foreground bg-background rounded-full hover:bg-background/90 transition-colors"
+              className="inline-flex items-center gap-2 px-6 py-3 text-sm font-medium text-foreground bg-background hover:bg-background/90 transition-colors"
             >
               Contact us <ArrowRight className="w-4 h-4" />
             </Link>
