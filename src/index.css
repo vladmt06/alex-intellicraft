@@ -6,48 +6,48 @@
 
 @layer base {
   :root {
-    --background: 0 0% 99%;
-    --foreground: 160 25% 12%;
+    --background: 40 25% 96%;
+    --foreground: 0 0% 8%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 160 25% 12%;
+    --card: 40 25% 98%;
+    --card-foreground: 0 0% 8%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 160 25% 12%;
+    --popover: 40 25% 98%;
+    --popover-foreground: 0 0% 8%;
 
-    --primary: 160 55% 20%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 0 0% 8%;
+    --primary-foreground: 40 25% 96%;
 
-    --secondary: 155 15% 94%;
-    --secondary-foreground: 160 30% 18%;
+    --secondary: 40 20% 92%;
+    --secondary-foreground: 0 0% 8%;
 
-    --muted: 150 10% 93%;
-    --muted-foreground: 160 10% 45%;
+    --muted: 40 15% 90%;
+    --muted-foreground: 0 0% 40%;
 
-    --accent: 160 45% 28%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 0 0% 8%;
+    --accent-foreground: 40 25% 96%;
 
     --destructive: 0 62.8% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 155 12% 88%;
-    --input: 155 12% 88%;
-    --ring: 160 55% 20%;
+    --border: 40 12% 85%;
+    --input: 40 12% 85%;
+    --ring: 0 0% 8%;
 
-    --radius: 0.5rem;
+    --radius: 0.25rem;
 
-    --terminal: 160 55% 20%;
-    --terminal-dim: 160 20% 50%;
+    --terminal: 0 0% 8%;
+    --terminal-dim: 0 0% 45%;
     --highlight: 36 80% 50%;
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 160 25% 12%;
-    --sidebar-primary: 160 55% 20%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 155 15% 94%;
-    --sidebar-accent-foreground: 160 30% 18%;
-    --sidebar-border: 155 12% 88%;
-    --sidebar-ring: 160 55% 20%;
+    --sidebar-background: 40 25% 96%;
+    --sidebar-foreground: 0 0% 8%;
+    --sidebar-primary: 0 0% 8%;
+    --sidebar-primary-foreground: 40 25% 96%;
+    --sidebar-accent: 40 20% 92%;
+    --sidebar-accent-foreground: 0 0% 8%;
+    --sidebar-border: 40 12% 85%;
+    --sidebar-ring: 0 0% 8%;
 
     --font-display: 'DM Serif Display', Georgia, serif;
     --font-body: 'DM Sans', system-ui, sans-serif;
@@ -67,9 +67,11 @@
 
   h1, h2, h3, h4 {
     font-family: var(--font-display);
-    color: hsl(160, 25%, 12%);
+    color: hsl(0, 0%, 8%);
+    font-weight: 400;
+    letter-spacing: -0.01em;
   }
-}
+  }
 
 @layer components {
   .text-display {

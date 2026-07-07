@@ -29,36 +29,25 @@ const features = [
 
 const FeaturesSection = () => {
   return (
-    <section
-      className="relative py-32 px-6"
-      style={{ background: "hsl(0 0% 5%)" }}
-    >
+    <section className="relative py-32 px-6 bg-background border-t border-border">
       <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-px" style={{ background: "hsl(0 0% 12%)" }}>
+        <div className="grid grid-cols-1 md:grid-cols-2">
           {features.map((f, i) => (
             <motion.div
               key={f.title}
-              initial={{ opacity: 0, y: 24 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: i * 0.08, ease: "easeOut" }}
-              className="p-10 transition-colors duration-300"
-              style={{ background: "hsl(0 0% 5%)" }}
-              whileHover={{ backgroundColor: "hsl(0 0% 7%)" }}
+              transition={{ duration: 0.5, delay: i * 0.06, ease: "easeOut" }}
+              className={`p-10 md:p-12 border-border ${i % 2 === 0 ? "md:border-r" : ""} ${i < 2 ? "border-b" : ""}`}
             >
-              <p
-                className="text-[10px] tracking-widest uppercase mb-6"
-                style={{ fontFamily: "'JetBrains Mono', monospace", color: "hsl(0 0% 40%)" }}
-              >
+              <p className="text-[10px] tracking-widest uppercase mb-6 font-mono text-foreground/45">
                 {f.label}
               </p>
-              <h3
-                className="text-2xl md:text-3xl tracking-tight mb-4"
-                style={{ color: "hsl(0 0% 93%)" }}
-              >
+              <h3 className="text-2xl md:text-3xl tracking-tight mb-4 text-foreground">
                 {f.title}
               </h3>
-              <p className="text-sm leading-[1.7]" style={{ color: "hsl(0 0% 50%)" }}>
+              <p className="text-sm leading-[1.7] text-foreground/60 max-w-md">
                 {f.description}
               </p>
             </motion.div>
