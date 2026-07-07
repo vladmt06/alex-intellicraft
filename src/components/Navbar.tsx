@@ -10,7 +10,7 @@ const Navbar = () => {
       <nav className="border-b border-border bg-background/80 backdrop-blur-sm">
         <div className="relative flex items-center h-14 px-6 max-w-6xl mx-auto">
           <Link to="/" aria-label="Alexandria home" className="absolute left-6">
-            <img src={alexandriaLogo} alt="Alexandria" className="h-7" />
+            <img src={alexandriaLogo} alt="Alexandria" className="h-7 [filter:invert(1)]" />
           </Link>
           <div className="flex items-center justify-center gap-10 w-full">
             <Link to="/platform" className="font-sans text-sm font-medium text-foreground hover:text-foreground/60 transition-colors">
