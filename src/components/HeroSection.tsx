@@ -11,10 +11,23 @@ const logos = [
 
 const HeroSection = () => {
   return (
-    <section className="relative w-full bg-background">
+    <section className="relative w-full min-h-screen flex flex-col bg-background">
+      {/* Full-bleed video background */}
+      <div className="absolute inset-0 w-full h-full overflow-hidden bg-muted">
+        <iframe
+          src="https://www.youtube.com/embed/ALgyYN3beWw?autoplay=1&mute=1&loop=1&playlist=ALgyYN3beWw&controls=0&showinfo=0&modestbranding=1&rel=0&disablekb=1&iv_load_policy=3&playsinline=1"
+          className="absolute inset-0 w-full h-full pointer-events-none"
+          allow="autoplay; encrypted-media"
+          frameBorder="0"
+          title="Background video"
+        />
+        {/* Gradient overlay for readability and transition to content */}
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-background/30" />
+      </div>
+
       <Navbar />
 
-      <div className="max-w-6xl mx-auto px-6 pt-40 pb-24">
+      <div className="relative z-10 flex-1 flex flex-col justify-end max-w-6xl mx-auto px-6 pt-32 pb-24">
         <p className="text-xs font-mono uppercase tracking-[0.2em] text-foreground/50 mb-10">
           Platform Overview
         </p>
@@ -42,21 +55,8 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Video block, Harvey-style */}
-      <div className="max-w-6xl mx-auto px-6 pb-24">
-        <div className="relative w-full aspect-[16/9] overflow-hidden bg-muted">
-          <iframe
-            src="https://www.youtube.com/embed/ALgyYN3beWw?autoplay=1&mute=1&loop=1&playlist=ALgyYN3beWw&controls=0&showinfo=0&modestbranding=1&rel=0&disablekb=1&iv_load_policy=3&playsinline=1"
-            className="absolute inset-0 w-full h-full pointer-events-none"
-            allow="autoplay; encrypted-media"
-            frameBorder="0"
-            title="Background video"
-          />
-        </div>
-      </div>
-
       {/* Accredited-by bar */}
-      <div className="border-y border-border">
+      <div className="relative z-10 border-y border-border bg-background">
         <div className="max-w-6xl mx-auto px-6 py-6 flex flex-wrap items-center justify-center gap-8">
           <span className="text-foreground/50 text-xs font-mono uppercase tracking-[0.2em]">
             Accredited by executives from
@@ -77,3 +77,4 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
