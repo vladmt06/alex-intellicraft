@@ -321,35 +321,35 @@ const DemoOutput = ({ darkMode }: { darkMode?: boolean }) => {
                           {isSelected && <Check size={9} style={{ color: "hsl(0 0% 90%)" }} />}
                         </div>
                       </td>
-                      <td className="px-3 py-3">
+                      <td className="px-3 py-3 whitespace-nowrap">
                         <span className="font-semibold flex items-center gap-1.5" style={{ color: "hsl(0 0% 93%)" }}>
                           {row.compound}
                           <ExternalLink size={10} style={{ color: "hsl(0 0% 30%)" }} />
                         </span>
                       </td>
-                      <td className="px-3 py-3" style={{ color: "hsl(0 0% 55%)" }}>{row.sponsor}</td>
+                      <td className="px-3 py-3 whitespace-nowrap" style={{ color: "hsl(0 0% 55%)" }}>{row.sponsor}</td>
                       <td className="px-3 py-3 whitespace-nowrap">
                         <span className="px-2 py-0.5 rounded text-[10px] font-medium whitespace-nowrap" style={{ background: "hsl(0 0% 100% / 0.06)", color: "hsl(0 0% 75%)" }}>
                           {row.phase}
                         </span>
                       </td>
-                      <td className="px-3 py-3 font-mono" style={{ color: "hsl(0 0% 45%)" }}>{row.trial}</td>
-                      <td className="px-3 py-3">
+                      <td className="px-3 py-3 font-mono whitespace-nowrap" style={{ color: "hsl(0 0% 45%)" }}>{row.trial}</td>
+                      <td className="px-3 py-3 whitespace-nowrap">
                         <span className="px-2 py-0.5 rounded text-[10px] font-medium" style={{ background: dStyle.bg, color: dStyle.text }}>
                           {row.designation}
                         </span>
                       </td>
-                      <td className="px-3 py-3 font-mono font-semibold" style={{ color: "hsl(0 0% 90%)" }}>{row.orr}</td>
-                      <td className="px-3 py-3 font-mono" style={{ color: "hsl(0 0% 50%)" }}>{row.nPatients}</td>
-                      <td className="px-3 py-3">
+                      <td className="px-3 py-3 font-mono font-semibold whitespace-nowrap" style={{ color: "hsl(0 0% 90%)" }}>{row.orr}</td>
+                      <td className="px-3 py-3 font-mono whitespace-nowrap" style={{ color: "hsl(0 0% 50%)" }}>{row.nPatients}</td>
+                      <td className="px-3 py-3 whitespace-nowrap">
                         <span className="px-2 py-0.5 rounded text-[10px] font-medium" style={{ background: sStyle.bg, color: sStyle.text }}>
                           {row.status}
                         </span>
                       </td>
-                      <td className="px-3 py-3 font-mono font-bold" style={{ color: Number(row.approvalProb.replace('%','')) > 30 ? "hsl(0 0% 100%)" : "hsl(0 0% 50%)" }}>
+                      <td className="px-3 py-3 font-mono font-bold whitespace-nowrap" style={{ color: Number(row.approvalProb.replace('%','')) > 30 ? "hsl(0 0% 100%)" : "hsl(0 0% 50%)" }}>
                         {row.approvalProb}
                       </td>
-                      <td className="px-3 py-3 font-mono" style={{ color: "hsl(0 0% 55%)" }}>{row.estApproval}</td>
+                      <td className="px-3 py-3 font-mono whitespace-nowrap" style={{ color: "hsl(0 0% 55%)" }}>{row.estApproval}</td>
                     </tr>
                   );
                 })}
@@ -378,11 +378,11 @@ const DemoOutput = ({ darkMode }: { darkMode?: boolean }) => {
                 <tbody>
                   {regulatoryData.map((row, i) => (
                     <tr key={i} style={{ borderTop: "1px solid hsl(0 0% 10%)" }}>
-                      <td className="px-3 py-2.5 font-medium" style={{ color: "hsl(0 0% 75%)" }}>{row[0]}</td>
+                      <td className="px-3 py-2.5 font-medium whitespace-nowrap" style={{ color: "hsl(0 0% 75%)" }}>{row[0]}</td>
                       {row.slice(1).map((cell, j) => (
                         <td
                           key={j}
-                          className="px-3 py-2.5"
+                          className="px-3 py-2.5 whitespace-nowrap"
                           style={{
                             color: cell.startsWith("Yes") || cell.startsWith("~4") ? "hsl(0 0% 90%)" :
                                    cell.startsWith("No") || cell === "Unlikely" ? "hsl(0 0% 35%)" :
