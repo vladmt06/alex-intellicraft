@@ -328,8 +328,8 @@ const DemoOutput = ({ darkMode }: { darkMode?: boolean }) => {
                         </span>
                       </td>
                       <td className="px-3 py-3" style={{ color: "hsl(0 0% 55%)" }}>{row.sponsor}</td>
-                      <td className="px-3 py-3">
-                        <span className="px-2 py-0.5 rounded text-[10px] font-medium" style={{ background: "hsl(0 0% 100% / 0.06)", color: "hsl(0 0% 75%)" }}>
+                      <td className="px-3 py-3 whitespace-nowrap">
+                        <span className="px-2 py-0.5 rounded text-[10px] font-medium whitespace-nowrap" style={{ background: "hsl(0 0% 100% / 0.06)", color: "hsl(0 0% 75%)" }}>
                           {row.phase}
                         </span>
                       </td>
