@@ -75,7 +75,6 @@ const Index = () => {
     </Helmet>
     <main className="min-h-screen">
       <HeroSection />
-      <ArchitectureSection />
       <UseCasesScrollSection />
       <DemoSection />
       
