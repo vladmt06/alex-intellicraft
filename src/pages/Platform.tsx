@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { ArrowRight, ShieldCheck, Lock, Plug, Cloud } from "lucide-react";
 import InsightsNav from "@/components/InsightsNav";
+import ArchitectureSection from "@/components/ArchitectureSection";
 
 const products = [
   {
