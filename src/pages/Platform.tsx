@@ -98,6 +98,8 @@ const Platform = () => {
       <InsightsNav />
 
       <main className="min-h-screen bg-background">
+        <ArchitectureSection />
+
         {/* Hero */}
         <section className="pt-40 pb-24 px-6">
           <div className="max-w-6xl mx-auto">
