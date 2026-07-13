@@ -26,26 +26,26 @@ const HeroSection = () => {
       <Navbar />
 
       <div className="relative z-10 flex-1 flex flex-col justify-end max-w-6xl mx-auto px-6 pt-32 pb-24">
-        <p className="text-xs font-mono uppercase tracking-[0.2em] text-foreground/50 mb-10">
+        <p className="text-xs font-mono uppercase tracking-[0.2em] text-white/60 mb-10">
           Platform Overview
         </p>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-end">
           <div className="lg:col-span-7">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl leading-[1.02] tracking-tight text-foreground">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl leading-[1.02] tracking-tight text-white">
               The future of biopharma decision-making.
             </h1>
           </div>
 
           <div className="lg:col-span-5 lg:pb-3">
-            <p className="text-lg text-foreground/70 leading-relaxed mb-8 max-w-md">
+            <p className="text-lg text-white/80 leading-relaxed mb-8 max-w-md">
               An autonomous workforce for deal diligence and live screening.
             </p>
             <a
               href="https://calendly.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center px-5 py-3 text-sm font-medium text-background bg-foreground hover:bg-foreground/90 transition-colors"
+              className="inline-flex items-center px-5 py-3 text-sm font-medium text-foreground bg-white hover:bg-white/90 transition-colors"
             >
               Book a Call
             </a>
