@@ -54,9 +54,9 @@ const HeroSection = () => {
       </div>
 
       {/* Accredited-by bar */}
-      <div className="relative z-10 border-y border-border bg-background">
+      <div className="relative z-10 border-y border-white/10 bg-black/20">
         <div className="max-w-6xl mx-auto px-6 py-6 flex flex-wrap items-center justify-center gap-8">
-          <span className="text-foreground/50 text-xs font-mono uppercase tracking-[0.2em]">
+          <span className="text-white/60 text-xs font-mono uppercase tracking-[0.2em]">
             Accredited by executives from
           </span>
           {logos.map((logo, i) => (
@@ -64,7 +64,7 @@ const HeroSection = () => {
               key={i}
               src={logo.src}
               alt={logo.alt}
-              className="object-contain opacity-70 [filter:invert(1)]"
+              className="object-contain opacity-80"
               style={{ height: logo.height, transform: `translateY(${logo.offsetY}px)` }}
             />
           ))}
