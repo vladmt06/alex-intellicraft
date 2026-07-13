@@ -1,6 +1,5 @@
 import HeroSection from "@/components/HeroSection";
 import { Helmet } from "react-helmet-async";
-import ArchitectureSection from "@/components/ArchitectureSection";
 import UseCasesScrollSection from "@/components/UseCasesScrollSection";
 import DemoSection from "@/components/DemoSection";
 
